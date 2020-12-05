@@ -37,22 +37,26 @@ function obtenervalorConImpuesto(tipoProducto, valorSinImpuesto){
     
     switch (tipoProducto) {
         case 1:
-            valor =valorSinImpuesto*21/100;
-        alert("El valor del producto de tipo 1 mas el 21% es :"+ valor)    
+            valor =valorSinImpuesto*21/100 ;
+            valorTotal = valor +valorSinImpuesto;
+        alert("El valor del producto de tipo 1 mas el 21% es :"+ valorTotal)    
             break;
         case 2:
             valor =valorSinImpuesto*10/100;
-        alert("El valor del producto de tipo 2 mas el 10% es :"+ valor)
+            valorTotal = valor +valorSinImpuesto;
+        alert("El valor del producto de tipo 2 mas el 10% es :"+ valorTotal)
 
         case 3:
             valor = valorSinImpuesto*5/100;
-        alert("El valor del producto de tipo 2 mas el 10% es :"+ valor)
+            valorTotal = valor +valorSinImpuesto;
+        alert("El valor del producto de tipo 3 mas el 5 % es :"+ valorTotal)
     
         default:
-            alert("No es un tipo valido")   
+    
             break;
     }
     };
-    obtenervalorConImpuesto(3, 100)
+    
+    obtenervalorConImpuesto(2, 100000)
 
     
